@@ -10,17 +10,17 @@ Tags Devops, Developer Happiness,Static Analysis
 
 * [Testing Psalm Locally](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
 
-* [Testing Psalm on Remote Server ]()
+* [Testing Psalm on Remote Server ](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
 
-* [Testing Psalm with CI/CD tool(Jenkins) on merge]()
+* [Testing Psalm with CI/CD tool(Jenkins) on merge](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
 
-* [Testing Psalm with CI/CD tool(Jenkins) on Pull Request]()
+* [Testing Psalm with CI/CD tool(Jenkins) on Pull Request](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
 
-* [Utilizing Psalm Baseline Feature for Legacy error handling]()
+* [Utilizing Psalm Baseline Feature for Legacy error handling](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#utilizing-psalm-baseline-feature-for-legacy-error- handling)
 
-* [Improving Psalm error output with bootstrap file]()
+* [Improving Psalm error output with bootstrap file](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#improving-psalm-error-output-with-bootstrap-file)
 
-* [Fixing Civi-core errors as detected by Psalm ]()
+* [Fixing Civi-core errors as detected by PsalmFixing Civi-core errors as detected by Psalm ](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
 
 # Project Overview
 
