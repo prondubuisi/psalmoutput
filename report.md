@@ -4,12 +4,11 @@ https://summerofcode.withgoogle.com/projects/#6100626637848576
 Tags Devops, Developer Happiness,Static Analysis
 
 # Table of Content
-1. [Project Overview]()
+1. [Project Overview](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#project-overview)
 
+2. [Project Implementation](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#project-implementation)
 
-2. [Project Implementation]()
-
-* [Testing Psalm Locally]()
+* [Testing Psalm Locally](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
 
 * [Testing Psalm on Remote Server ]()
 
