@@ -29,7 +29,7 @@ analysis purposes. This project will also work on improving Code coverage report
 CiviCRM. Both static analysis and improved unit code test coverage reports will make for better
 quality assurance benchmarks for CiviCRM.
 
-The static analysis tool selected for integration with [civi-core](https://github.com/civicrm/civicrm-core) is [Psalm](https://github.com/vimeo/psalm). 
+The static analysis tool selected for integration with [Civi-core](https://github.com/civicrm/civicrm-core) is [Psalm](https://github.com/vimeo/psalm). 
 For integrating an open source static analysis tool I considered [Phpstan](https://github.com/phpstan/phpstan), [Phan](https://github.com/phan/phan) and [Psalm](https://github.com/vimeo/psalm). I
 choose Vimeo’s Psalm because of its ease of installation, configuration , descriptive error
 messages and also its extensive [documentation](documentation.).
@@ -42,10 +42,14 @@ messages and also its extensive [documentation](documentation.).
 ## Phase 1
 ### Analyzing Civi-core with Psalm Locally
 
+During the Community bonding phase the CiviCRM team provided a remote server for use by me and my mentors for this project implementation. Though a remote server was provided my mentors made me understand that analysis would have an easier workflow if I tried Psalm out Locally on my Computer. To acheive local analysis I did the following;
+
 * I created my own [fork](https://github.com/prondubuisi/civi-mirror) of the Civi-core repository
 * I cloned the fork to my Local System
 * Tried Running Psalm on the local repository
 * Opened [Issues](https://github.com/vimeo/psalm/issues?q=is%3Aissue+author%3Aprondubuisi+is%3Aclosed) in the Psalm Repository to fix errors encountered while running psalm locally
+
+From Beginning it was clear there was no way I would implement my static analysis project  directly on the CiviCRM Jenkins Tool chain as the infrastructure  was used on daily basis for active development, hence I was provided with a server with similar configurations.
 
 ## Phase 2
 ### Analyzing Civi-core with Psalm on Remote Server 
