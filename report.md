@@ -70,12 +70,6 @@ messages and also its extensive [documentation](documentation.).
 ## Phase 7
 ### Fixing Civi-core errors as detected by Psalm 
 
-## Phase 3
-### Improving Psalm output with Vagrant and Autoloader
-1. Can Psalm be Integrated with Civi-core, Jenkins and Github?
-
-## Phase 4
-### Fixing Psalm errors
 
 Yes here is a link of a [failing test ](https://github.com/prondubuisi/civi-mirror/pull/11)  with Psalm integrated on a mirror repository 
 
