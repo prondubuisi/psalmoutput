@@ -29,12 +29,27 @@ messages and also its extensive [documentation](documentation.).
 * Opened [Issues](https://github.com/vimeo/psalm/issues?q=is%3Aissue+author%3Aprondubuisi+is%3Aclosed) in the Psalm Repository to fix errors encountered while running psalm locally
 
 ## Phase 2
-### Testing Psalm with CI tool(Jenkins)
+### Testing Psalm on Remote Server 
+
+## Phase 3
+### Testing Psalm with CI/CD tool(Jenkins) on merge
 
 * Setup Jenkins on [remote server](http://35.246.100.181:8080/) provided by the CiviCRM team with help from mentors 
 * Installed PHP and Composer on remote Server
 * Installed required plugins for Github and Jenkins Integration
 * Made Jenkins run Psalm Analysis on pull requests
+
+## Phase 4 
+### Testing Psalm with CI/CD tool(Jenkins) on Pull Request
+
+## Phase 5 
+### Utilizing Psalm Baseline Feature for Legacy error handling
+
+## Phase 6
+### Improving Psalm error output with bootstrap file
+
+## Phase 7
+### Fixing Psalm errors
 
 ## Phase 3
 ### Improving Psalm output with Vagrant and Autoloader
