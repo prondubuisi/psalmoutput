@@ -18,7 +18,7 @@ Tags Devops, Developer Happiness,Static Analysis
 
 * [Utilizing Psalm Baseline Feature for Civi-core Legacy code error handling](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#utilizing-psalm-baseline-feature-for-civi-core-legacy-code-error-handling)
 
-* [Improving Psalm error output with bootstrap file](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#improving-psalm-error-output-with-bootstrap-file)
+* [Improving Civi-core Psalm error output with bootstrap file](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#improving-civi-core-psalm-error-output-with-bootstrap-file)
 
 * [Fixing Civi-core errors as detected by Psalm](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#fixing-civi-core-errors-as-detected-by-psalm)
 
