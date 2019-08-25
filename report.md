@@ -5,6 +5,8 @@ Tags Devops, Developer Happiness,Static Analysis
 
 # Table of Content
 1. [Project Overview]()
+
+
 2. [Project Implementation]()
 
 * [Testing Psalm Locally]()
@@ -19,7 +21,7 @@ Tags Devops, Developer Happiness,Static Analysis
 
 * [Improving Psalm error output with bootstrap file]()
 
-* [Fixing Psalm errors]()
+* [Fixing Civi-core errors as detected by Psalm ]()
 
 # Project Overview
 
@@ -67,7 +69,7 @@ messages and also its extensive [documentation](documentation.).
 ### Improving Psalm error output with bootstrap file
 
 ## Phase 7
-### Fixing Psalm errors
+### Fixing Civi-core errors as detected by Psalm 
 
 ## Phase 3
 ### Improving Psalm output with Vagrant and Autoloader
