@@ -42,17 +42,27 @@ messages and also its extensive [documentation](documentation.).
 ## Phase 1
 ### Analyzing Civi-core with Psalm Locally
 
-During the Community bonding phase the CiviCRM team provided a remote server for use by me and my mentors for this project implementation. Though a remote server was provided my mentors made me understand that analysis would have an easier workflow if I tried Psalm out Locally on my Computer. To acheive local analysis I did the following;
+During the Community bonding phase the CiviCRM team provided a remote server for use by me and my mentors for this project implementation. Though a remote server was provided my mentors made me understand that Static analysis would have an easier workflow if I tried Psalm out Locally on my Computer. To acheive local Static analysis I did the following;
 
 * I created my own [fork](https://github.com/prondubuisi/civi-mirror) of the Civi-core repository
 * I cloned the fork to my Local System
 * Tried Running Psalm on the local repository
 * Opened [Issues](https://github.com/vimeo/psalm/issues?q=is%3Aissue+author%3Aprondubuisi+is%3Aclosed) in the Psalm Repository to fix errors encountered while running psalm locally
 
-From Beginning it was clear there was no way I would implement my static analysis project  directly on the CiviCRM Jenkins Tool chain as the infrastructure  was used on daily basis for active development, hence I was provided with a server with similar configurations.
+From Beginning it was clear there was no way I would implement my static analysis project  directly on the CiviCRM Jenkins Tool chain as the infrastructure  was used on daily basis for active development, hence I was provided with a server having similar configurations.
 
 ## Phase 2
 ### Analyzing Civi-core with Psalm on Remote Server 
+
+The developers maintaining Psalm were very quick to fix errors encountered while running Psalm on Civi-core,after the errors where fixed and Psalm was confirmed to work locally I tried Static Analysis on the remote server by doing the following;
+
+* I installed PHP on the server
+* I installed Composer on the server
+* I Installed git on the server
+* I cloned the Civi-core repository to the remote server
+* I installed Psalm via Composer as one of Civi-core Dependencies
+
+With all the requirements in place, I was able to run Psalm static analysis on Civi-core without errors. One important observation from this was that Psalm returned a varying error count on the Locally. Mentors from the CiviCRM community mentioned that this was normal and that was the reason CiviCRM had test suites for different environments and different PHP versions.
 
 ## Phase 3
 ### Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on merge
