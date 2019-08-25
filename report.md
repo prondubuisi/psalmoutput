@@ -1,7 +1,17 @@
-# Static Code Analysis Integration for CiviCRM core
+# Static Code Analysis Integration for CiviCRM Core
 https://summerofcode.withgoogle.com/projects/#6100626637848576
 
 Tags Devops, Developer Happiness,Static Analysis
+
+# Table of Content
+1. [Project Overview]()
+2. [Project Implementation]()
+..* [Testing Psalm Locally]()
+..* [Testing Psalm on Remote Server ]()
+..* [Testing Psalm with CI/CD tool(Jenkins) on merge]()
+..* []()
+..* []()
+..* []()
 
 # Project Overview
 
