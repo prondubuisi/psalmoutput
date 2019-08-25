@@ -6,9 +6,13 @@ Tags Devops, Developer Happiness,Static Analysis
 # Table of Content
 1. [Project Overview]()
 2. [Project Implementation]()
+
 ..* [Testing Psalm Locally]()
+
 ..* [Testing Psalm on Remote Server ]()
+
 ..* [Testing Psalm with CI/CD tool(Jenkins) on merge]()
+
 ..* []()
 ..* []()
 ..* []()
