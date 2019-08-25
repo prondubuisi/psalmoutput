@@ -40,7 +40,7 @@ messages and also its extensive [documentation](documentation.).
 # Project Implementation
 
 ## Phase 1
-### Testing Psalm Locally
+### Analyzing Civi-core with Psalm Locally
 
 * I created my own [fork](https://github.com/prondubuisi/civi-mirror) of the Civi-core repository
 * I cloned the fork to my Local System
@@ -48,10 +48,10 @@ messages and also its extensive [documentation](documentation.).
 * Opened [Issues](https://github.com/vimeo/psalm/issues?q=is%3Aissue+author%3Aprondubuisi+is%3Aclosed) in the Psalm Repository to fix errors encountered while running psalm locally
 
 ## Phase 2
-### Testing Psalm on Remote Server 
+### Analyzing Civi-core with Psalm on Remote Server 
 
 ## Phase 3
-### Testing Psalm with CI/CD tool(Jenkins) on merge
+### Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on merge
 
 * Setup Jenkins on [remote server](http://35.246.100.181:8080/) provided by the CiviCRM team with help from mentors 
 * Installed PHP and Composer on remote Server
@@ -59,13 +59,13 @@ messages and also its extensive [documentation](documentation.).
 * Made Jenkins run Psalm Analysis on pull requests
 
 ## Phase 4 
-### Testing Psalm with CI/CD tool(Jenkins) on Pull Request
+### Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on Pull Request
 
 ## Phase 5 
-### Utilizing Psalm Baseline Feature for Legacy error handling
+### Utilizing Psalm Baseline Feature for Civi-core Legacy code error handling
 
 ## Phase 6
-### Improving Psalm error output with bootstrap file
+### Improving Civi-core Psalm error output with bootstrap file
 
 ## Phase 7
 ### Fixing Civi-core errors as detected by Psalm 
