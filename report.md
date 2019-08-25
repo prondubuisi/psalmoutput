@@ -7,15 +7,19 @@ Tags Devops, Developer Happiness,Static Analysis
 1. [Project Overview]()
 2. [Project Implementation]()
 
-..* [Testing Psalm Locally]()
+* [Testing Psalm Locally]()
 
-..* [Testing Psalm on Remote Server ]()
+* [Testing Psalm on Remote Server ]()
 
-..* [Testing Psalm with CI/CD tool(Jenkins) on merge]()
+* [Testing Psalm with CI/CD tool(Jenkins) on merge]()
 
-..* []()
-..* []()
-..* []()
+* [Testing Psalm with CI/CD tool(Jenkins) on Pull Request]()
+
+* [Utilizing Psalm Baseline Feature for Legacy error handling]()
+
+* [Improving Psalm error output with bootstrap file]()
+
+* [Fixing Psalm errors]()
 
 # Project Overview
 
