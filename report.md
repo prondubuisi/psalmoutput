@@ -8,19 +8,19 @@ Tags Devops, Developer Happiness,Static Analysis
 
 2. [Project Implementation](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#project-implementation)
 
-* [Testing Psalm Locally](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
+* [Analyzing Civi-core with Psalm Locally](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#analyzing-civi-core-with-psalm-locally)
 
-* [Testing Psalm on Remote Server ](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-on-remote-server)
+* [Analyzing Civi-core with Psalm on Remote Server](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#analyzing-civi-core-with-psalm-on-remote-server)
 
-* [Testing Psalm with CI/CD tool(Jenkins) on merge](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-locally)
+* [Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on merge](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#analyzing-civi-core-with-psalm-and-cicd-tooljenkins-on-merge)
 
-* [Testing Psalm with CI/CD tool(Jenkins) on Pull Request](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#testing-psalm-with-cicd-tooljenkins-on-pull-request)
+* [Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on Pull Request](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#analyzing-civi-core-with-psalm-and-cicd-tooljenkins-on-pull-request)
 
-* [Utilizing Psalm Baseline Feature for Legacy error handling](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#utilizing-psalm-baseline-feature-for-legacy-error-handling)
+* [Utilizing Psalm Baseline Feature for Civi-core Legacy code error handling](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#utilizing-psalm-baseline-feature-for-civi-core-legacy-code-error-handling)
 
 * [Improving Psalm error output with bootstrap file](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#improving-psalm-error-output-with-bootstrap-file)
 
-* [Fixing Civi-core errors as detected by PsalmFixing Civi-core errors as detected by Psalm ](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#fixing-civi-core-errors-as-detected-by-psalm)
+* [Fixing Civi-core errors as detected by Psalm](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#fixing-civi-core-errors-as-detected-by-psalm)
 
 # Project Overview
 
