@@ -102,6 +102,12 @@ Here is passing [Pull request](https://github.com/prondubuisi/civi-mirror/pull/1
 ## Phase 6
 ### Improving Civi-core Psalm error output with bootstrap file
 
+With Civi-core Psalm static analysis integrated on pull requests, it was time to take a closer look at the error output, my mentors were able to dectect that most of the errors reported by Psalm were false negatives. This was the case because The Classes/Methods not found errors from Psalm pointed to Classes and functions that were found in the Civi-core codebase.
+
+The CiviCRM team faced a similar issue when integrating PHPUnit as part of their CI/CD Jenkins tool chain so the created a [Bootstrap](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) file to pull in dependcies(classes and functions) required by Civicore. Psalm had an `Autoloader` directive for cases like this and the directive was utilized in solving this issue.
+
+Adding the Bootstrap file through the autoloader directive eliminated the false Classes/Functions not found errors. See more information on the implementation in the [documentation] (section).
+
 ## Phase 7
 ### Fixing Civi-core errors as detected by Psalm 
 
