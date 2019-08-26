@@ -24,7 +24,7 @@ Tags Devops, Developer Happiness,Static Analysis
 
 3. [Documentation](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#documentation-on-integrating-civicrm-core-with-jenkins-and-github)
 
-* [Installing Jenkins on a server](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#installing--jenkins-on-a-server
+* [Installing Jenkins on a server](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#installing--jenkins-on-a-server)
 
 * [Integrating Jenkins with Github](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#integrating-jenkins-with-github)
 
