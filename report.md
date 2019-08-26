@@ -30,7 +30,7 @@ Tags Devops, Developer Happiness,Static Analysis
 
 * [Psalm Setup](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#psalm-setup)
 
-* [Samples] (https://github.com/prondubuisi/psalmoutput/blob/master/report.md#samples)
+* [Samples](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#samples)
 
 * [Potential Gotchas](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#potential-gotchas)
 
