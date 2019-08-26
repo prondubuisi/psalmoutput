@@ -106,32 +106,19 @@ With Civi-core Psalm static analysis integrated on pull requests, it was time to
 
 The CiviCRM team faced a similar issue when integrating PHPUnit as part of their CI/CD Jenkins tool chain so the created a [Bootstrap](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) file to pull in dependcies(classes and functions) required by Civicore. Psalm had an `Autoloader` directive for cases like this and the directive was utilized in solving this issue.
 
-Adding the Bootstrap file through the autoloader directive eliminated the false Classes/Functions not found errors. See more information on the implementation in the [documentation] (section).
+Adding the Bootstrap file through the autoloader directive eliminated the false Classes/Functions not found errors. See more information on the implementation in the [documentation](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#documentation-on-integrating-civicrm-core-with-jenkins-and-github) Section.
 
 ## Phase 7
 ### Fixing Civi-core errors as detected by Psalm 
 
-
-Yes here is a link of a [failing test ](https://github.com/prondubuisi/civi-mirror/pull/6)  with Psalm integrated on a mirror repository. Notice that even though the analysis complete Psalm 
-
-## P
-2. Can Psalm tests pass even with legacy errors?
-
- Yes here is a link to a [passing test](https://github.com/prondubuisi/civi-mirror/pull/10) with legacy errors in place
+An Important part of this project was determining if errors detected by Psalm static analysis were fixable. To assetain this
+we analysed a [section](https://github.com/civicrm/civicrm-core/tree/master/api/v3/examples) of Civi-core codebase and I submitted [pull request](https://github.com/civicrm/civicrm-core/pull/15043) to fix the errors detected. Merging the pull request to the codebase eliminated the errors on second static analysis.
  
- See the [Documentation](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file) for more Information on this
- 
- 3. Are Psalm errors fixable?
- 
- Yes, here is a link to a pull request to show that https://github.com/civicrm/civicrm-core/pull/15043
- 
- With the pull request merged, Psalm no longer flags this errors 
 
 # Todo
 
-Continue working with the CiviCRM team until the feature is completely integrated
-
-
+* Continue working with the CiviCRM team to Integrate Psalm as part of CI/CD Tool chain
+* Fix more Legacy Codebase errors dectected by Psalm
 
 
 # Documentation on Integrating CiviCRM core with Jenkins and Github
