@@ -22,10 +22,24 @@ Tags Devops, Developer Happiness,Static Analysis
 
 * [Fixing Civi-core errors as detected by Psalm](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#fixing-civi-core-errors-as-detected-by-psalm)
 
-3. Documentation
-*
-*
-*
+3. [Documentation](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#documentation-on-integrating-civicrm-core-with-jenkins-and-github)
+
+* [Installing Jenkins on a server](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#installing--jenkins-on-a-server
+
+* [Integrating Jenkins with Github](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#integrating-jenkins-with-github)
+
+* [Psalm Setup](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#psalm-setup)
+
+* [Samples] (https://github.com/prondubuisi/psalmoutput/blob/master/report.md#samples)
+
+* [Potential Gotchas](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#potential-gotchas)
+
+* [Handling False negatives with an Autoloader File](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#handling-false-negatives-with-an-autoloader-file)
+
+* [Handy Flags for PSALM](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#handy-flags-for-psalm)
+
+* [Blog posts](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#blog-posts)
+
 
 # Project Overview
 
