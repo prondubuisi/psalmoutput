@@ -61,7 +61,7 @@ messages and also its extensive [documentation](documentation.).
 ## Phase 1
 ### Analyzing Civi-core with Psalm Locally
 
-During the Community bonding phase the CiviCRM team provided a remote server for use by me and my mentors for this project implementation. Though a remote server was provided my mentors made me understand that Static analysis would have an easier workflow if I tried Psalm out Locally on my Computer. To achieve local Static analysis I did the following;
+During the Community bonding phase the CiviCRM team provided a remote server for use by me and my mentors for this project implementation. Though a remote server was provided, my mentors made me understand that Static analysis would have an easier workflow if I tried Psalm out Locally on my Computer. To achieve local Static analysis I did the following;
 
 * I created my own [fork](https://github.com/prondubuisi/civi-mirror) of the Civi-core repository
 * I cloned the fork to my Local System
@@ -79,9 +79,9 @@ The developers maintaining Psalm were very quick to fix errors encountered while
 * I installed Composer on the server
 * I Installed git on the server
 * I cloned the Civi-core repository to the remote server
-* I installed Psalm via Composer as one of Civi-core Dependencies
+* I installed Psalm via Composer as one of Civi-core  Composer Dependencies
 
-With all the requirements in place, I was able to run Psalm static analysis on Civi-core without errors. One important observation from this was that Psalm returned a varying error(locally and remotely). Mentors from the CiviCRM community mentioned that this was normal and that was the reason CiviCRM had test suites for different environments and different PHP versions.
+With all the requirements in place, I was able to run Psalm static analysis on Civi-core without errors. One important observation from this was that Psalm returned varying errors(locally and remotely). Mentors from the CiviCRM community mentioned that this was normal and that was the reason CiviCRM had test suites for different environments and different PHP versions.
 
 ## Phase 3
 ### Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on merge
@@ -112,16 +112,16 @@ Here is the [output](http://35.246.100.181:8080/job/civicore-pr/74/console) from
 ## Phase 5 
 ### Utilizing Psalm Baseline Feature for Civi-core Legacy code error handling
 
-Even though the error output from Psalm Static analysis was appreciated, there was need to handle legacy code errors with an approach that keeps them in check, while allowing for focus errors  resulting from new Pull requests. This was necessary because it was not feasible for the CiviCRM development team to fix all the errors already existing within the codebase(Thousands of error) before utilizing the benefits of Psalm static analysis for new pull requests. Most of this errors did not cause a breakdown in functionality and the dev team had both feature requests and bugs breaking CiviCRM functionality to handle.
+Even though the error output from Psalm Static analysis was appreciated, there was need to handle legacy code errors with an approach that keeps them in check, while allowing for focus on errors  resulting from new Pull requests. This was necessary because it was not feasible for the CiviCRM development team to fix all the errors already existing within the codebase(Thousands of errors) before utilizing the benefits of Psalm static analysis for new pull requests. Most of these errors did not cause a breakdown in functionality and the development team had both feature requests and bugs breaking CiviCRM functionality to handle.
 
-Psalm had a baseline feature which allows it to grandfather existing errors while picking up new errors from new pull requests. This was exactly what was needed. With the Baseline feature implemented, Psalm was able to analyze Civi-core without errors. It is worthy of note that CiviCRM Psalm legacy errors where marked for incremental fixing.
+Psalm had a [baseline](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file) feature which allows it to grandfather existing errors while picking up new errors from new pull requests. This was exactly what was needed. With the Baseline feature implemented, Psalm was able to analyze Civi-core without errors. It is worthy of note that CiviCRM Psalm legacy errors were marked for incremental fixing.
 
 Here is passing [Pull request](https://github.com/prondubuisi/civi-mirror/pull/10) and its [output](http://35.246.100.181:8080/job/civicore-pr/72/console)  with the baseline feature Implemented.
 
 ## Phase 6
 ### Improving Civi-core Psalm error output with bootstrap file
 
-With Civi-core Psalm static analysis integrated on pull requests, it was time to take a closer look at the error output, my mentors were able to dectect that most of the errors reported by Psalm were false negatives. This was the case because The Classes/Methods not found errors from Psalm pointed to Classes and functions that were found in the Civi-core codebase.
+With Civi-core Psalm static analysis integrated on pull requests, it was time to take a closer look at the error output, my mentors were able to dectect that most of the errors reported by Psalm were false negatives. This was the case because The Classes/Methods not found errors from Psalm pointed to Classes and functions that were found within the Civi-core codebase.
 
 The CiviCRM team faced a similar issue when integrating PHPUnit as part of their CI/CD Jenkins tool chain so the created a [Bootstrap](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) file to pull in dependcies(classes and functions) required by Civicore. Psalm had an `Autoloader` directive for cases like this and the directive was utilized in solving this issue.
 
@@ -131,12 +131,12 @@ Adding the Bootstrap file through the autoloader directive eliminated the false 
 ### Fixing Civi-core errors as detected by Psalm 
 
 An Important part of this project was determining if errors detected by Psalm static analysis were fixable. To assetain this
-we analysed a [section](https://github.com/civicrm/civicrm-core/tree/master/api/v3/examples) of Civi-core codebase and I submitted [pull request](https://github.com/civicrm/civicrm-core/pull/15043) to fix the errors detected. Merging the pull request to the codebase eliminated the errors on second static analysis.
+we analysed a [section](https://github.com/civicrm/civicrm-core/tree/master/api/v3/examples) of Civi-core codebase and I submitted a [pull request](https://github.com/civicrm/civicrm-core/pull/15043) to fix the errors detected. Merging the pull request to the codebase eliminated the errors on second static analysis.
  
 
 # Todo
 
-* Continue working with the CiviCRM team to Integrate Psalm as part of CI/CD Tool chain
+* Continue working with the CiviCRM team to Integrate Psalm as part of CI/CD Tool chain Infrastructure
 * Fix more Legacy Codebase errors dectected by Psalm
 
 
@@ -181,13 +181,13 @@ Psalm [baseline](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#
 
 ## Potential Gotchas 
 
-* For consistent results, It is advisable to create psalm configuration files i.e psalm.xml && psalmbaseline.xml on the actual server where Jenkins is installed, as Psalm might have different error count when run on the same repository, with same configurations but on different servers. This is the case because different systems have different configurations. This is the reason why Civi-core exists for different versions of PHP for example
+* For consistent results, It is advisable to create psalm configuration files i.e psalm.xml && psalmbaseline.xml on the actual server where Jenkins is installed, as Psalm might have different error count when run on the same repository, with same configurations but on different servers. This is the case because different systems have different configurations. This is the reason why Civi-core exists for different versions of PHP for example.
 
 * running `./vendor/bin/psalm --init` creates a psalm.xml file which lists the different folders in the current repository, for civicore folders ext,packages are always included but non existent, do well to remove the folders from psalm.xml before running `./vendor/bin/psalm`  on the folder, to avoid errors
 
 # Handling False negatives with an Autoloader File
 
-False Negatives refer to  error pointers that are actually incorrect, this was the case with Psalm reporting that many classes and dependencies were missing when in fact they were present example e.g. Undefined Function/Class errors. To make up for this the Auto loader(Bootstrap) [file](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) for Civi-core Unit tests was used for Psalm by adding an autoloader in the `psalm.xml` file
+False Negatives refer to  error pointers that are actually incorrect, this was the case with Psalm reporting that many classes and dependencies were missing when in fact they were present example e.g. Undefined Function/Class errors. To make up for this the Autoloader(Bootstrap) [file](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) for Civi-core Unit tests was used for Psalm by adding an autoloader in the `psalm.xml` file
 
 `<psalm  autoloader="tests/phpunit/CiviTest/bootstrap.php"  > `
 
