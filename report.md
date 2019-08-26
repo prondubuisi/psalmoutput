@@ -171,7 +171,7 @@ Add the following to build Step
 * Add psalmbase.xml file to Civi-core root folder, this is a baseline file
    *  This can be achieved by running `./vendor/bin/psalm --set-baseline=psalmbaseline.xml`
 
-Psalm [baseline](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file) feature allows us to grandfather errors already existing in civicore, while checking for new errors arising from subsequent PR's after its installation. 
+Psalm [baseline](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file) feature allows us to grandfather errors already existing in Civi-core, while checking for new errors arising from subsequent PR's after its installation. 
 
 ## Samples
 * [Build History for Mirror Repository](http://35.246.100.181:8080/job/civicore-pr/) 
@@ -187,7 +187,7 @@ Psalm [baseline](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#
 
 # Handling False negatives with an Autoloader File
 
-False Negatives refer to  error pointers that are actually incorrect, this was the case with Psalm reporting that many classes and dependencies were missing when in fact they were present example e.g. Undefined Function/Class errors. To make up for this the Autoloader(Bootstrap) [file](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) for Civi-core Unit tests was used for Psalm by adding an autoloader in the `psalm.xml` file
+False Negatives refer to  error pointers that are actually incorrect, this was the case with Psalm reporting that many dependencies were missing when in fact they were present example e.g. Undefined Function/Class errors. To make up for this the Autoloader(Bootstrap) [file](https://github.com/civicrm/civicrm-core/blob/master/tests/phpunit/CiviTest/bootstrap.php) for Civi-core Unit tests was used for Psalm by adding an autoloader in the `psalm.xml` file
 
 `<psalm  autoloader="tests/phpunit/CiviTest/bootstrap.php"  > `
 
