@@ -22,6 +22,11 @@ Tags Devops, Developer Happiness,Static Analysis
 
 * [Fixing Civi-core errors as detected by Psalm](https://github.com/prondubuisi/psalmoutput/blob/master/report.md#fixing-civi-core-errors-as-detected-by-psalm)
 
+3. Documentation
+*
+*
+*
+
 # Project Overview
 
 This project aims at integrating Vimeo’s Psalm into the CiviCRM Jenkins toolchain for static
@@ -155,7 +160,8 @@ Add the following to build Step
 Psalm [baseline](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file) feature allows us to grandfather errors already existing in civicore, while checking for new errors arising from subsequent PR's after its installation. 
 
 ## Samples
-* [Jenkins Server](http://35.246.100.181:8080/job/civicore-pr/configure) with Job and required configuration setup 
+* [Build History for Mirror Repository](http://35.246.100.181:8080/job/civicore-pr/) 
+
 * [Github repo](https://github.com/prondubuisi/civi-mirror) Mirrowing civicore, notice the [psalm.xml](https://github.com/prondubuisi/civi-mirror/blob/master/psalm.xml) file and the [psalmbaseline.xml](https://github.com/prondubuisi/civi-mirror/blob/master/psalmbaseline.xml) file
 
 
@@ -181,7 +187,7 @@ and the observations are as follows
  * Running analysis with Psalm and an Autoloader takes lots of hours when run on the entire Civi-core repository,
   without the autoloader this analysis works in minutes
   
-  * Autoloaders May only be feasible 
+  
 
 # Handy Flags for PSALM
 * --threads=10
