@@ -76,10 +76,19 @@ Jenkins. To achieve that I did the following
 * Configure Github webhooks to work with Jenkins server url endpoint
 * Attempt code merge to test integration
 
-Having figured that Psalm worked with github merge, the next step was working to run Psalm on whenever a pull request is made to the Civi-core repository.
+Having figured that Psalm worked with github merge, the next step was working to run Psalm  whenever a pull request is made to the Civi-core mirror repository.
 
 ## Phase 4 
 ### Analyzing Civi-core with Psalm and CI/CD tool(Jenkins) on Pull Request
+
+* Install Jenkins Git plugin
+* Install Jenkins Github plugin 
+* Install Jenkins GitHub Pull Request Builder
+* Install Jenkins Rebuilder plugin
+* Configure Github webhooks to work with Jenkins server url endpoint
+* Attempt [pull request](https://github.com/prondubuisi/civi-mirror/pull/6) to test integration
+
+Here is the [output](http://35.246.100.181:8080/job/civicore-pr/74/console) from the above pull request, notice that even though Psalm static analysis completes it returns with many errors. This is expected as there are lots of legacy code within the codebase.
 
 ## Phase 5 
 ### Utilizing Psalm Baseline Feature for Civi-core Legacy code error handling
@@ -91,7 +100,7 @@ Having figured that Psalm worked with github merge, the next step was working to
 ### Fixing Civi-core errors as detected by Psalm 
 
 
-Yes here is a link of a [failing test ](https://github.com/prondubuisi/civi-mirror/pull/11)  with Psalm integrated on a mirror repository 
+Yes here is a link of a [failing test ](https://github.com/prondubuisi/civi-mirror/pull/6)  with Psalm integrated on a mirror repository. Notice that even though the analysis complete Psalm 
 
 ## P
 2. Can Psalm tests pass even with legacy errors?
