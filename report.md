@@ -93,6 +93,12 @@ Here is the [output](http://35.246.100.181:8080/job/civicore-pr/74/console) from
 ## Phase 5 
 ### Utilizing Psalm Baseline Feature for Civi-core Legacy code error handling
 
+Even though the error output from Psalm Static analysis was appreciated, there was need to handle legacy code errors with an approach that keeps them in check, while allowing for focus errors  resulting from new Pull requests. This was necessary because it was not feasible for the CiviCRM development team to fix all the errors already existing within the codebase(Thousands of error) before utilizing the benefits of Psalm static analysis for new pull requests. Most of this errors did not cause a breakdown in functionality and the dev team had both feature requests and bugs breaking CiviCRM functionality to handle.
+
+Psalm had a baseline feature which allows it to grandfather existing errors while picking up new errors from new pull requests. This was exactly what was needed. With the Baseline feature implemented, Psalm was able to analyze Civi-core without errors. It is worthy of note that CiviCRM Psalm legacy errors where marked for incremental fixing.
+
+Here is passing [Pull request](https://github.com/prondubuisi/civi-mirror/pull/10) and its [output](http://35.246.100.181:8080/job/civicore-pr/72/console)  with the baseline feature Implemented.
+
 ## Phase 6
 ### Improving Civi-core Psalm error output with bootstrap file
 
